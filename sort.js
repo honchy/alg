@@ -201,14 +201,14 @@ function boundary(arr, start, end) {
         while(s < e && arr[e] >= standard) {
             e --;
         }
-        // arr[s] = arr[e];
+        arr[s] = arr[e];
         while(s < e && arr[s] <= standard) {
             s ++;
         }
-        // arr[e] = arr[s];
-        if(s < e) {
-            swap(arr, s, e);
-        }
+        arr[e] = arr[s];
+        // if(s < e) {
+        //     swap(arr, s, e);
+        // }
     }
     arr[s] = standard;
     return s;
