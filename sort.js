@@ -206,9 +206,6 @@ function boundary(arr, start, end) {
             s ++;
         }
         arr[e] = arr[s];
-        // if(s < e) {
-        //     swap(arr, s, e);
-        // }
     }
     arr[s] = standard;
     return s;
